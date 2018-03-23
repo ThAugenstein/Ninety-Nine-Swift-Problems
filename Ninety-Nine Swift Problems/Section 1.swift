@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Section 1.swift
 //  Ninety-Nine Swift Problems
 //
 //  Created by Thomas Augenstein on 23.03.18.
@@ -8,5 +8,11 @@
 
 import Foundation
 
-let answer = List(1, 1, 2, 3, 5, 8)?.last
-
+extension List {
+    var last: T? {
+        if nextItem == nil {
+            return value
+        }
+        return nextItem!.last
+    }
+}

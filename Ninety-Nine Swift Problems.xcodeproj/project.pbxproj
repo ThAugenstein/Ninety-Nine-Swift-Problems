@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E2210F84206543CF00D0CACE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F83206543CF00D0CACE /* main.swift */; };
+		E2210F8B2065464F00D0CACE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F8A2065464F00D0CACE /* List.swift */; };
+		E2210F932065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F922065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift */; };
+		E2210F9C20654CE400D0CACE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F8A2065464F00D0CACE /* List.swift */; };
+		E2210F9E20654D6900D0CACE /* Section 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F9D20654D6900D0CACE /* Section 1.swift */; };
+		E2210F9F20654D6900D0CACE /* Section 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F9D20654D6900D0CACE /* Section 1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,22 @@
 /* Begin PBXFileReference section */
 		E2210F80206543CF00D0CACE /* Ninety-Nine Swift Problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Ninety-Nine Swift Problems"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2210F83206543CF00D0CACE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E2210F8A2065464F00D0CACE /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		E2210F902065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ninety-Nine Swift Problems Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2210F922065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninety_Nine_Swift_Problems_Unit_Tests.swift; sourceTree = "<group>"; };
+		E2210F942065473D00D0CACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2210F9D20654D6900D0CACE /* Section 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Section 1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E2210F7D206543CF00D0CACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2210F8D2065473D00D0CACE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				E2210F82206543CF00D0CACE /* Ninety-Nine Swift Problems */,
+				E2210F912065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests */,
 				E2210F81206543CF00D0CACE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				E2210F80206543CF00D0CACE /* Ninety-Nine Swift Problems */,
+				E2210F902065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +77,19 @@
 			isa = PBXGroup;
 			children = (
 				E2210F83206543CF00D0CACE /* main.swift */,
+				E2210F8A2065464F00D0CACE /* List.swift */,
+				E2210F9D20654D6900D0CACE /* Section 1.swift */,
 			);
 			path = "Ninety-Nine Swift Problems";
+			sourceTree = "<group>";
+		};
+		E2210F912065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2210F922065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift */,
+				E2210F942065473D00D0CACE /* Info.plist */,
+			);
+			path = "Ninety-Nine Swift Problems Unit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +112,23 @@
 			productReference = E2210F80206543CF00D0CACE /* Ninety-Nine Swift Problems */;
 			productType = "com.apple.product-type.tool";
 		};
+		E2210F8F2065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2210F952065473D00D0CACE /* Build configuration list for PBXNativeTarget "Ninety-Nine Swift Problems Unit Tests" */;
+			buildPhases = (
+				E2210F8C2065473D00D0CACE /* Sources */,
+				E2210F8D2065473D00D0CACE /* Frameworks */,
+				E2210F8E2065473D00D0CACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ninety-Nine Swift Problems Unit Tests";
+			productName = "Ninety-Nine Swift Problems Unit Tests";
+			productReference = E2210F902065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +140,10 @@
 				ORGANIZATIONNAME = "Thomas Augenstein";
 				TargetAttributes = {
 					E2210F7F206543CF00D0CACE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E2210F8F2065473D00D0CACE = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +162,20 @@
 			projectRoot = "";
 			targets = (
 				E2210F7F206543CF00D0CACE /* Ninety-Nine Swift Problems */,
+				E2210F8F2065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2210F8E2065473D00D0CACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2210F7C206543CF00D0CACE /* Sources */ = {
@@ -121,6 +183,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2210F84206543CF00D0CACE /* main.swift in Sources */,
+				E2210F9E20654D6900D0CACE /* Section 1.swift in Sources */,
+				E2210F8B2065464F00D0CACE /* List.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2210F8C2065473D00D0CACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2210F9C20654CE400D0CACE /* List.swift in Sources */,
+				E2210F9F20654D6900D0CACE /* Section 1.swift in Sources */,
+				E2210F932065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +325,32 @@
 			};
 			name = Release;
 		};
+		E2210F962065473D00D0CACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ninety-Nine Swift Problems Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "privat.Ninety-Nine-Swift-Problems-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		E2210F972065473D00D0CACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ninety-Nine Swift Problems Unit Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "privat.Ninety-Nine-Swift-Problems-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +368,15 @@
 			buildConfigurations = (
 				E2210F88206543CF00D0CACE /* Debug */,
 				E2210F89206543CF00D0CACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2210F952065473D00D0CACE /* Build configuration list for PBXNativeTarget "Ninety-Nine Swift Problems Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2210F962065473D00D0CACE /* Debug */,
+				E2210F972065473D00D0CACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
