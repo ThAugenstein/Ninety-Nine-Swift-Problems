@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Ninety-Nine Swift Problems Unit Tests.xcscheme</key>
+		<key>Ninety-Nine Swift Problems Unit Tests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Ninety-Nine Swift Problems.xcscheme</key>
+		<key>Ninety-Nine Swift Problems.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -18,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>E2210F7F206543CF00D0CACE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2210F8F2065473D00D0CACE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
