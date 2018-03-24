@@ -87,7 +87,7 @@ extension List {
 }
 
 /**
- P05 (*)  Find out whether a linked list is a palindrome.
+ P06 (*)  Find out whether a linked list is a palindrome.
  */
 
 extension List where T:Equatable {
@@ -103,3 +103,42 @@ extension List where T:Equatable {
     }
 }
 
+/**
+ P07 (**)  Flatten a nested linked list structure.
+ */
+
+extension List {
+    func flatten2(_ addclosure: (_ item: List) -> ()) {
+        
+        if let list = value as? List {
+            list.flatten2(addclosure)
+        } else {
+            if let newItem = List(value) {
+                addclosure(newItem)
+            }
+        }
+        if let next = nextItem {
+           next.flatten2(addclosure)
+        }
+    }
+    
+    func flatten() -> List {
+        var first: List? = nil
+        var prev: List? = nil
+        
+        let addItem: (_ item: List) -> () = {
+            item in
+            
+            if first == nil {
+                first = item
+                prev = first
+            } else {
+                prev!.nextItem = item
+                prev = item
+            }
+        }
+        
+        self.flatten2(addItem)
+        return first!
+    }
+}

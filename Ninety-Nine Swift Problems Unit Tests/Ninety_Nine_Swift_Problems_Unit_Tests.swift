@@ -81,4 +81,9 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
     func testPerformanceSection1() {
         runSection1()
     }
+    
+    func testFlatten() {
+        let list = List<Any>(List<Any>(1, 1)!, 2, List<Any>(3, List<Any>(5, 8)!)!)!.flatten()
+        XCTAssert("\(list)" == "List(1, 1, 2, 3, 5, 8)")
+    }
 }

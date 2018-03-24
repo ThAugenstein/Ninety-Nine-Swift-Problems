@@ -34,6 +34,10 @@ func runSection1() {
     
     print ("P06 Find out whether a linked list is a palindrome")
     print ("List(1, 2, 3, 2, 1).isPalindrome() = \(List(1, 2, 3, 2, 1)!.isPalindrome())\n")
+    
+    print ("P07 Flatten a nested linkes list structure")
+    let flattendList = List<Any>(List<Any>(1, 1)!, 2, List<Any>(3, List<Any>(5, 8)!)!)!.flatten()
+    print ("List<Any>(List<Any>(1, 1), 2, List<Any>(3, List<Any>(5, 8))).flatten() = \(flattendList)\n")
 
     print ("Section 1 done\n")
 }
