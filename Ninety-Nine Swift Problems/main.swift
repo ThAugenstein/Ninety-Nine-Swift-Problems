@@ -31,6 +31,9 @@ func runSection1() {
 
     print ("P05 Reverse a linked list.")
     print ("\(sampleList).reverse() = \(sampleList.reverse())\n")
+    
+    print ("P06 Find out whether a linked list is a palindrome")
+    print ("List(1, 2, 3, 2, 1).isPalindrome() = \(List(1, 2, 3, 2, 1)!.isPalindrome())\n")
 
     print ("Section 1 done\n")
 }

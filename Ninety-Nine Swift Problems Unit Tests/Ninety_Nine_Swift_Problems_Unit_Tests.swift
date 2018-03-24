@@ -70,6 +70,14 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssert(reverse[5] == 1, "reverse[5] == 1")
     }
     
+    func testIsPalindrome() {
+        XCTAssert(List(1, 2, 3, 2, 1)!.isPalindrome() == true, "List(1, 2, 3, 2, 1) is a palindrome")
+    }
+    
+    func testIsNotAPalindrome() {
+        XCTAssert(List(1, 2, 3, 4, 5)!.isPalindrome() == false, "List(1, 2, 3, 4, 5) is not a palindrom")
+    }
+    
     func testPerformanceSection1() {
         runSection1()
     }

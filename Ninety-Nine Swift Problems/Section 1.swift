@@ -85,3 +85,21 @@ extension List {
         return recursiveReverse(nil)
     }
 }
+
+/**
+ P05 (*)  Find out whether a linked list is a palindrome.
+ */
+
+extension List where T:Equatable {
+    
+    func isPalindrome() -> Bool {
+        
+        for index in 0...length/2 {
+            if self[index] != self[length-(1+index)] {
+                return false
+            }
+        }
+        return true
+    }
+}
+
