@@ -39,6 +39,10 @@ func runSection1() {
     let flattendList = List<Any>(List<Any>(1, 1)!, 2, List<Any>(3, List<Any>(5, 8)!)!)!.flatten()
     print ("List<Any>(List<Any>(1, 1), 2, List<Any>(3, List<Any>(5, 8))).flatten() = \(flattendList)\n")
 
+    print ("P08 Eliminate consecutive duplicates of linked list elements")
+    let list2 = List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e")!
+    print ("\(list2) = \(list2.compress())" )
+    
     print ("Section 1 done\n")
 }
 

@@ -26,10 +26,18 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssertNotNil(List(1, 2, 3, 4, 5))
     }
     
+    /**
+     P01 (*) Find the last element of a linked list.
+     */
+    
     func testLastElement() {
         let answer = List(1, 1, 2, 3, 5, 8)!.last!
         XCTAssert(answer == 8, "last element of List(1, 1, 2, 3, 5, 8) is 8")
     }
+    
+    /**
+     P02 (*) Find the last but one element of a linked list.
+     */
     
     func testPennultimate() {
         let answer = List(1, 1, 2, 3, 5, 8)!.pennultimate!
@@ -39,6 +47,10 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
     func testPennultimateWithSingleElement() {
         XCTAssert(List(1)!.pennultimate == nil, "pennultimate of List(1) is nil")
     }
+    
+    /**
+     P03 (*) Find the Kth element of a linked list.
+     */
     
     func testSubscript() {
         let list = List(4, 45, 23, 1, 0, 15)!
@@ -55,9 +67,17 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssert(list[5] == nil, "list[5] is ")
     }
     
+    /**
+     P04 (*)  Find the number of elements of a linked list.
+     */
+    
     func testLength() {
         XCTAssert(List(666, 555, 444, 333, 222, 111)!.length == 6, "List(666, 555, 444, 333, 222, 111).length is 6")
     }
+    
+    /**
+     P05 (*) Reverse a linked list.
+     */
     
     func testReverse() {
         let reverse = List(1, 1, 2, 3, 5, 8)!.reverse()
@@ -70,6 +90,10 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssert(reverse[5] == 1, "reverse[5] == 1")
     }
     
+    /**
+     P06 (*)  Find out whether a linked list is a palindrome.
+     */
+    
     func testIsPalindrome() {
         XCTAssert(List(1, 2, 3, 2, 1)!.isPalindrome() == true, "List(1, 2, 3, 2, 1) is a palindrome")
     }
@@ -78,6 +102,10 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssert(List(1, 2, 3, 4, 5)!.isPalindrome() == false, "List(1, 2, 3, 4, 5) is not a palindrom")
     }
     
+    /**
+     P07 (**)  Flatten a nested linked list structure.
+     */
+
     func testPerformanceSection1() {
         runSection1()
     }
@@ -85,5 +113,20 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
     func testFlatten() {
         let list = List<Any>(List<Any>(1, 1)!, 2, List<Any>(3, List<Any>(5, 8)!)!)!.flatten()
         XCTAssert("\(list)" == "List(1, 1, 2, 3, 5, 8)")
+    }
+    
+    /**
+     P08 (**)  Eliminate consecutive duplicates of linkes list elements.
+     */
+
+    func testElimintateConsecutiveDuplicates() {
+        let list = List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e")!
+        let compressedList = list.compress()
+        XCTAssert(compressedList[0] == "a")
+        XCTAssert(compressedList[1] == "b")
+        XCTAssert(compressedList[2] == "c")
+        XCTAssert(compressedList[3] == "a")
+        XCTAssert(compressedList[4] == "d")
+        XCTAssert(compressedList[5] == "e")
     }
 }

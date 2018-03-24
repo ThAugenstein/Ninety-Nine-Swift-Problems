@@ -141,4 +141,32 @@ extension List {
         self.flatten2(addItem)
         return first!
     }
+    
 }
+
+/**
+ P08 (**)  Eliminate consecutive duplicates of linkes list elements.
+ */
+
+extension List where T: Equatable {
+    
+    func compress() -> List {
+        let newList = List(value)!
+        var previousAdded = newList
+        var current = nextItem
+        
+        while current != nil {
+            if current!.value != previousAdded.value {
+                let newItem = List(current!.value)!
+                previousAdded.nextItem = newItem
+                previousAdded = newItem
+            }
+            
+            current = current!.nextItem
+        }
+        
+        
+        return newList
+    }
+}
+
