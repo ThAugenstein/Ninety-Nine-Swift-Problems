@@ -50,4 +50,8 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         let list = List(1000, 999, 998)!
         XCTAssert(list[5] == nil, "list[5] is ")
     }
+    
+    func testLength() {
+        XCTAssert(List(666, 555, 444, 333, 222, 111)!.length == 6, "List(666, 555, 444, 333, 222, 111).length is 6")
+    }
 }

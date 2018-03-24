@@ -52,3 +52,16 @@ extension List {
         return nextItem?[index-1]
     }
 }
+
+/**
+ P04 (*)  Find the number of elements of a linked list.
+ */
+
+extension List {
+    var length: Int {
+        guard let next = nextItem else {
+            return 1
+        }
+        return 1 + next.length
+    }
+}
