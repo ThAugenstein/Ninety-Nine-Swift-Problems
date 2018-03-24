@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2000BD620668D4600EF69ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F83206543CF00D0CACE /* main.swift */; };
 		E2210F84206543CF00D0CACE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F83206543CF00D0CACE /* main.swift */; };
 		E2210F8B2065464F00D0CACE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F8A2065464F00D0CACE /* List.swift */; };
 		E2210F932065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F922065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift */; };
@@ -194,6 +195,7 @@
 			files = (
 				E2210F9C20654CE400D0CACE /* List.swift in Sources */,
 				E2210F9F20654D6900D0CACE /* Section 1.swift in Sources */,
+				E2000BD620668D4600EF69ED /* main.swift in Sources */,
 				E2210F932065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

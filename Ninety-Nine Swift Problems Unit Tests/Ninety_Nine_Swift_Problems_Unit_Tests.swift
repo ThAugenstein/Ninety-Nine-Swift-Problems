@@ -69,4 +69,8 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssert(reverse[4] == 1, "reverse[4] == 1")
         XCTAssert(reverse[5] == 1, "reverse[5] == 1")
     }
+    
+    func testPerformanceSection1() {
+        runSection1()
+    }
 }
