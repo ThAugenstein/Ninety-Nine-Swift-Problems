@@ -8,7 +8,7 @@
 
 import Foundation
 
-class List<T> {
+class List<T>: CustomStringConvertible {
     var value: T
     var nextItem: List<T>?
     convenience init?(_ values: T...) {
@@ -21,4 +21,19 @@ class List<T> {
         value = first
         nextItem = List(Array(values.suffix(from: 1)))
     }
+    var description: String {
+        get {
+            return "List(" + stringList + ")"
+        }
+    }
+}
+
+extension List {
+    var stringList: String {
+        let stringValue = "\(value)"
+        guard let next = nextItem else {
+            return stringValue
+        }
+        return stringValue + ", " + next.stringList
+     }
 }

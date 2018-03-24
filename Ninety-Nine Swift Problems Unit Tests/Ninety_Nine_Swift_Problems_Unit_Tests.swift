@@ -22,6 +22,10 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         super.tearDown()
     }
     
+    func testListCreation() {
+        XCTAssertNotNil(List(1, 2, 3, 4, 5))
+    }
+    
     func testLastElement() {
         let answer = List(1, 1, 2, 3, 5, 8)!.last!
         XCTAssert(answer == 8, "last element of List(1, 1, 2, 3, 5, 8) is 8")
@@ -53,5 +57,16 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
     
     func testLength() {
         XCTAssert(List(666, 555, 444, 333, 222, 111)!.length == 6, "List(666, 555, 444, 333, 222, 111).length is 6")
+    }
+    
+    func testReverse() {
+        let reverse = List(1, 1, 2, 3, 5, 8)!.reverse()
+        XCTAssert("\(reverse)" == "List(8, 5, 3, 2, 1, 1)", "reverse = List(8, 5, 3, 2, 1, 1)")
+        XCTAssert(reverse[0] == 8, "reverse[0] == 8")
+        XCTAssert(reverse[1] == 5, "reverse[1] == 5")
+        XCTAssert(reverse[2] == 3, "reverse[2] == 3")
+        XCTAssert(reverse[3] == 2, "reverse[3] == 2")
+        XCTAssert(reverse[4] == 1, "reverse[4] == 1")
+        XCTAssert(reverse[5] == 1, "reverse[5] == 1")
     }
 }

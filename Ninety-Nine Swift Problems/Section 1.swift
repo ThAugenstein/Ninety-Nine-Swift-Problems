@@ -65,3 +65,23 @@ extension List {
         return 1 + next.length
     }
 }
+
+/**
+ P05 (*) Reverse a linked list.
+ */
+
+extension List {
+    
+    func recursiveReverse(_ prevItem: List<T>?) -> List<T> {
+        let newItem = List(value)
+        newItem!.nextItem = prevItem
+        
+        guard let next = nextItem else {
+            return newItem!
+        }
+        return next.recursiveReverse(newItem)
+    }
+    func reverse() -> List<T> {
+        return recursiveReverse(nil)
+    }
+}
