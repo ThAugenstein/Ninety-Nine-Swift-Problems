@@ -8,7 +8,7 @@
 
 import Foundation
 
-func runSection1() {
+func runSection1() -> Bool {
     
     print ("Running Section 1 ...\n")
     
@@ -44,7 +44,9 @@ func runSection1() {
     print ("\(list2) = \(list2.compress())" )
     
     print ("Section 1 done\n")
+    
+    return true
 }
 
-runSection1()
+_ = runSection1()
 

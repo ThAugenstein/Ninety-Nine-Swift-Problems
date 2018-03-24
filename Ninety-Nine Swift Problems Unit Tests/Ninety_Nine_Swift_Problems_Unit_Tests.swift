@@ -21,6 +21,9 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
+    func testSection1() {
+        XCTAssert(runSection1() == true)
+    }
     
     func testListCreation() {
         XCTAssertNotNil(List(1, 2, 3, 4, 5))
@@ -106,9 +109,6 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
      P07 (**)  Flatten a nested linked list structure.
      */
 
-    func testPerformanceSection1() {
-        runSection1()
-    }
     
     func testFlatten() {
         let list = List<Any>(List<Any>(1, 1)!, 2, List<Any>(3, List<Any>(5, 8)!)!)!.flatten()
