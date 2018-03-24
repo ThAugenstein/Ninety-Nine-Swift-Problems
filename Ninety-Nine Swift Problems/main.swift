@@ -8,5 +8,8 @@
 
 import Foundation
 
-let answer = List(1, 1, 2, 3, 5, 8)?.last
+
+print ("P01 Find the last element of a linked list.")
+print ("List(1, 1, 2, 3, 5, 8).last = \(List(1, 1, 2, 3, 5, 8)!.last!)")
+
 

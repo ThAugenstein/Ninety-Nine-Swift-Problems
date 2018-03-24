@@ -8,6 +8,10 @@
 
 import Foundation
 
+/**
+ P01 (*) Find the last element of a linked list.
+*/
+
 extension List {
     var last: T? {
         if nextItem == nil {

@@ -23,19 +23,8 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
     
     func testLastElement() {
         let answer = List(1, 1, 2, 3, 5, 8)!.last!
-        XCTAssert(answer == 8, "last Element should be 8!")
+        XCTAssert(answer == 8, "last element of List(1, 1, 2, 3, 5, 8) is 8")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }
