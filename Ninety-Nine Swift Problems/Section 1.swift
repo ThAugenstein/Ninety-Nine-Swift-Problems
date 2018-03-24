@@ -20,3 +20,19 @@ extension List {
         return nextItem!.last
     }
 }
+
+/**
+ P02 (*) Find the last but one element of a linked list.
+ */
+
+extension List {
+    var pennultimate: T? {
+        guard let next = nextItem else {
+            return nil
+        }
+        if next.nextItem == nil {
+            return value
+        }
+        return next.pennultimate
+    }
+}

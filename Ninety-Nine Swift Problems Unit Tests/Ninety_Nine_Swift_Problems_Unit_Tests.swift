@@ -26,5 +26,13 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssert(answer == 8, "last element of List(1, 1, 2, 3, 5, 8) is 8")
     }
     
+    func testPennultimate() {
+        let answer = List(1, 1, 2, 3, 5, 8)!.pennultimate!
+        XCTAssert(answer == 5, "pennultimate of List(1, 1, 2, 3, 5, 8) is 5")
+    }
+    
+    func testPennultimateWithSingleElement() {
+        XCTAssert(List(1)!.pennultimate == nil, "pennultimate of List(1) is nil")
+    }
     
 }
