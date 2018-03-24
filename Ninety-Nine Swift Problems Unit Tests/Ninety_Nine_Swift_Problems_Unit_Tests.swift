@@ -14,6 +14,7 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
     
     override func tearDown() {
@@ -35,4 +36,18 @@ class Ninety_Nine_Swift_Problems_Unit_Tests: XCTestCase {
         XCTAssert(List(1)!.pennultimate == nil, "pennultimate of List(1) is nil")
     }
     
+    func testSubscript() {
+        let list = List(4, 45, 23, 1, 0, 15)!
+        XCTAssert(list[3]! == 1, "list[3] is equal to 1")
+    }
+    
+    func testNegativSubscript() {
+        let list = List(1, 2, 3, 4)!
+        XCTAssert(list[-5] == nil, "list[-5] is nil")
+    }
+    
+    func testSubscriptOutOfRange() {
+        let list = List(1000, 999, 998)!
+        XCTAssert(list[5] == nil, "list[5] is ")
+    }
 }

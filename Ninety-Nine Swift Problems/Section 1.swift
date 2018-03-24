@@ -36,3 +36,19 @@ extension List {
         return next.pennultimate
     }
 }
+
+/**
+ P03 (*) Find the Kth element of a linked list.
+ */
+
+extension List {
+    subscript(index: Int) -> T? {
+        guard index >= 0 else {
+            return nil
+        }
+        if index == 0 {
+            return value
+        }
+        return nextItem?[index-1]
+    }
+}
