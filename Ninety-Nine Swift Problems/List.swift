@@ -22,9 +22,8 @@ class List<T>: CustomStringConvertible {
         nextItem = List(Array(values.suffix(from: 1)))
     }
     var description: String {
-        get {
-            return "List(" + stringList + ")"
-        }
+
+        return "List(" + stringList + ")"
     }
 }
 

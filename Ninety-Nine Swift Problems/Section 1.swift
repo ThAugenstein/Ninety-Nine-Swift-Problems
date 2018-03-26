@@ -71,11 +71,11 @@ extension List {
  */
 
 extension List {
-    
+
     func recursiveReverse(_ prevItem: List<T>?) -> List<T> {
         let newItem = List(value)
         newItem!.nextItem = prevItem
-        
+
         guard let next = nextItem else {
             return newItem!
         }
@@ -91,9 +91,9 @@ extension List {
  */
 
 extension List where T:Equatable {
-    
+
     func isPalindrome() -> Bool {
-        
+
         for index in 0...length/2 {
             if self[index] != self[length-(1+index)] {
                 return false
@@ -108,8 +108,8 @@ extension List where T:Equatable {
  */
 
 extension List {
-    func flatten2(_ addclosure: (_ item: List) -> ()) {
-        
+    func flatten2(_ addclosure: (_ item: List) -> Void) {
+
         if let list = value as? List {
             list.flatten2(addclosure)
         } else {
@@ -121,14 +121,14 @@ extension List {
            next.flatten2(addclosure)
         }
     }
-    
+
     func flatten() -> List {
         var first: List? = nil
         var prev: List? = nil
-        
-        let addItem: (_ item: List) -> () = {
+
+        let addItem: (_ item: List) -> Void = {
             item in
-            
+
             if first == nil {
                 first = item
                 prev = first
@@ -137,11 +137,11 @@ extension List {
                 prev = item
             }
         }
-        
+
         self.flatten2(addItem)
         return first!
     }
-    
+
 }
 
 /**
@@ -149,24 +149,22 @@ extension List {
  */
 
 extension List where T: Equatable {
-    
+
     func compress() -> List {
         let newList = List(value)!
         var previousAdded = newList
         var current = nextItem
-        
+
         while current != nil {
             if current!.value != previousAdded.value {
                 let newItem = List(current!.value)!
                 previousAdded.nextItem = newItem
                 previousAdded = newItem
             }
-            
+
             current = current!.nextItem
         }
-        
-        
+
         return newList
     }
 }
-
