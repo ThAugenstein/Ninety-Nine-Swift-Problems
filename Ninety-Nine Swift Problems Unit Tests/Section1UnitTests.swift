@@ -9,7 +9,7 @@
 import XCTest
 // @testable import List
 
-class NinetyNineSwiftProblemsUnitTests: XCTestCase {
+class Section1UnitTests: XCTestCase {
 
     override func setUp() {
         super.setUp()

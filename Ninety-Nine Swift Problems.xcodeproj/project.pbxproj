@@ -10,10 +10,13 @@
 		E2000BD620668D4600EF69ED /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F83206543CF00D0CACE /* main.swift */; };
 		E2210F84206543CF00D0CACE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F83206543CF00D0CACE /* main.swift */; };
 		E2210F8B2065464F00D0CACE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F8A2065464F00D0CACE /* List.swift */; };
-		E2210F932065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F922065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift */; };
+		E2210F932065473D00D0CACE /* Section1UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F922065473D00D0CACE /* Section1UnitTests.swift */; };
 		E2210F9C20654CE400D0CACE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F8A2065464F00D0CACE /* List.swift */; };
 		E2210F9E20654D6900D0CACE /* Section 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F9D20654D6900D0CACE /* Section 1.swift */; };
 		E2210F9F20654D6900D0CACE /* Section 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2210F9D20654D6900D0CACE /* Section 1.swift */; };
+		E2D0335A206BE53300E07FE9 /* Section 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03359206BE53300E07FE9 /* Section 2.swift */; };
+		E2D0335B206BE53300E07FE9 /* Section 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03359206BE53300E07FE9 /* Section 2.swift */; };
+		E2D0335D206BE60B00E07FE9 /* Section2UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D0335C206BE60B00E07FE9 /* Section2UnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,9 +36,11 @@
 		E2210F83206543CF00D0CACE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E2210F8A2065464F00D0CACE /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		E2210F902065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ninety-Nine Swift Problems Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2210F922065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninety_Nine_Swift_Problems_Unit_Tests.swift; sourceTree = "<group>"; };
+		E2210F922065473D00D0CACE /* Section1UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section1UnitTests.swift; sourceTree = "<group>"; };
 		E2210F942065473D00D0CACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2210F9D20654D6900D0CACE /* Section 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Section 1.swift"; sourceTree = "<group>"; };
+		E2D03359206BE53300E07FE9 /* Section 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Section 2.swift"; sourceTree = "<group>"; };
+		E2D0335C206BE60B00E07FE9 /* Section2UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section2UnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 				E2210F83206543CF00D0CACE /* main.swift */,
 				E2210F8A2065464F00D0CACE /* List.swift */,
 				E2210F9D20654D6900D0CACE /* Section 1.swift */,
+				E2D03359206BE53300E07FE9 /* Section 2.swift */,
 			);
 			path = "Ninety-Nine Swift Problems";
 			sourceTree = "<group>";
@@ -87,7 +93,8 @@
 		E2210F912065473D00D0CACE /* Ninety-Nine Swift Problems Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E2210F922065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift */,
+				E2210F922065473D00D0CACE /* Section1UnitTests.swift */,
+				E2D0335C206BE60B00E07FE9 /* Section2UnitTests.swift */,
 				E2210F942065473D00D0CACE /* Info.plist */,
 			);
 			path = "Ninety-Nine Swift Problems Unit Tests";
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2210F84206543CF00D0CACE /* main.swift in Sources */,
+				E2D0335A206BE53300E07FE9 /* Section 2.swift in Sources */,
 				E2210F9E20654D6900D0CACE /* Section 1.swift in Sources */,
 				E2210F8B2065464F00D0CACE /* List.swift in Sources */,
 			);
@@ -212,8 +220,10 @@
 			files = (
 				E2210F9C20654CE400D0CACE /* List.swift in Sources */,
 				E2210F9F20654D6900D0CACE /* Section 1.swift in Sources */,
+				E2D0335B206BE53300E07FE9 /* Section 2.swift in Sources */,
 				E2000BD620668D4600EF69ED /* main.swift in Sources */,
-				E2210F932065473D00D0CACE /* Ninety_Nine_Swift_Problems_Unit_Tests.swift in Sources */,
+				E2D0335D206BE60B00E07FE9 /* Section2UnitTests.swift in Sources */,
+				E2210F932065473D00D0CACE /* Section1UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
