@@ -90,7 +90,7 @@ extension List {
  P06 (*)  Find out whether a linked list is a palindrome.
  */
 
-extension List where T:Equatable {
+extension List where T: Equatable {
 
     func isPalindrome() -> Bool {
 
