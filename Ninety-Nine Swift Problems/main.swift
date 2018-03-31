@@ -47,4 +47,12 @@ func runSection1() -> Bool {
     return true
 }
 
+func runSection2() -> Bool {
+
+    print("P31 Determine whether a given integer is prime.")
+    print("7.isPrime() = \(7.isPrime())")
+    return true
+}
+
 _ = runSection1()
+_ = runSection2()

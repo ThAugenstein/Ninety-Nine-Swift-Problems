@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- P31 (*) Find the last element of a linked list.
+ P31 (*) Determine whether a given number is prime.
  */
 
 extension Int {

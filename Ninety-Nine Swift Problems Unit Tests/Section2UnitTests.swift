@@ -24,6 +24,7 @@ class Section2UnitTests: XCTestCase {
         XCTAssert(7.isPrime() == true, "7 is a prime number")
         XCTAssert(8.isPrime() == false, "8 is not a prime number")
         XCTAssert(97.isPrime() == true, "97 is a prime number")
+        XCTAssert(95.isPrime() == false, "95 is not a prime number")
     }
 
 }
