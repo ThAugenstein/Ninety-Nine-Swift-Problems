@@ -40,7 +40,7 @@ func runSection1() -> Bool {
 
     print ("P08 Eliminate consecutive duplicates of linked list elements")
     let list2 = List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e")!
-    print ("\(list2) = \(list2.compress())" )
+    print ("\(list2) = \(list2.compress())\n" )
 
     print ("Section 1 done\n")
 
@@ -50,7 +50,13 @@ func runSection1() -> Bool {
 func runSection2() -> Bool {
 
     print("P31 Determine whether a given integer is prime.")
-    print("7.isPrime() = \(7.isPrime())")
+    print("97.isPrime() = \(97.isPrime())\n")
+
+    print("P32 Determine the greatest common divisor of two positive numbers.")
+    print("GCD of 63 and 36 is \(Int.gcd(63, 36))\n")
+
+    print ("Section 2 done\n")
+
     return true
 }
 

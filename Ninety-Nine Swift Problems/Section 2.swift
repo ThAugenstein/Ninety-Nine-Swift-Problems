@@ -22,3 +22,19 @@ extension Int {
         return true
     }
 }
+
+/**
+ P32 (*) Determine the greatest common divisor of two positive numbers.
+ */
+
+extension Int {
+    static func gcd(_ first: Int, _ second: Int) -> Int {
+        var alpha = first, beta = second
+        while beta != 0 {
+            let temp = beta
+            beta = alpha % beta
+            alpha = temp
+        }
+        return alpha
+    }
+}

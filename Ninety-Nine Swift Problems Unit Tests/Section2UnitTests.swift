@@ -20,6 +20,14 @@ class Section2UnitTests: XCTestCase {
         super.tearDown()
     }
 
+    func testSection2() {
+        XCTAssert(runSection1() == true)
+    }
+
+    /**
+     P31 (*) Determine whether a given number is prime.
+     */
+
     func testIsPrime() {
         XCTAssert(7.isPrime() == true, "7 is a prime number")
         XCTAssert(8.isPrime() == false, "8 is not a prime number")
@@ -27,4 +35,12 @@ class Section2UnitTests: XCTestCase {
         XCTAssert(95.isPrime() == false, "95 is not a prime number")
     }
 
+    /**
+     P32 (*) Determine the greatest common divisor of two positive numbers.
+     */
+
+    func testGCD() {
+        XCTAssert(Int.gcd(36, 63) == 9, "The gcd of 36 and 63 is 9")
+        XCTAssert(Int.gcd(1071, 462) == 21, "The gcd of 1071 and 462 is 21")
+    }
 }
