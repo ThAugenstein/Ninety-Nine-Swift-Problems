@@ -52,4 +52,16 @@ class Section2UnitTests: XCTestCase {
         XCTAssert(35.isCoprime(to: 64) == true, "35 is coprime to 64")
         XCTAssert(21.isCoprime(to: 24) == false, "21 is not coprime to 24")
     }
+
+    /**
+     P33 (*) Calculate Euler's totient function phi(m)
+     */
+
+    func testTotient() {
+        XCTAssert(10.totient == 4, "phi(10) = 4")
+        XCTAssert(1.totient == 1, "phi(1) = 1")
+        XCTAssert(50.totient == 20, "phi(50) = 20")
+        XCTAssert(81.totient == 54, "phi(81) = 54")
+    }
+
 }

@@ -58,6 +58,9 @@ func runSection2() -> Bool {
     print("P33 Determine whether two positive integer numbers are coprime.")
     print("35.isCoprime(to: 64) is \(35.isCoprime(to: 64))\n")
 
+    print("P34 Calculate Euler's totient function phi(m)")
+    print("10.totient = \(10.totient)\n")
+
     print ("Section 2 done\n")
 
     return true

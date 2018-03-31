@@ -29,13 +29,13 @@ extension Int {
 
 extension Int {
     static func gcd(_ first: Int, _ second: Int) -> Int {
-        var alpha = first, beta = second
-        while beta != 0 {
-            let temp = beta
-            beta = alpha % beta
-            alpha = temp
+        var a = first, b = second
+        while b != 0 {
+            let temp = b
+            b = a % b
+            a = temp
         }
-        return alpha
+        return a
     }
 }
 
@@ -46,5 +46,16 @@ extension Int {
 extension Int {
     func isCoprime(to: Int) -> Bool {
         return Int.gcd(self, to) == 1
+    }
+}
+
+/**
+ P33 (*) Calculate Euler's totient function phi(m)
+ */
+
+extension Int {
+    var totient: Int {
+        let ret = Array(1...self).reduce(0) { count, number in count + (Int.gcd(number, self) == 1 ? 1 : 0) }
+        return ret
     }
 }
