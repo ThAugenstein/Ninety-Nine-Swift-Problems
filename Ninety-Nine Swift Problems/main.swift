@@ -55,6 +55,9 @@ func runSection2() -> Bool {
     print("P32 Determine the greatest common divisor of two positive numbers.")
     print("GCD of 63 and 36 is \(Int.gcd(63, 36))\n")
 
+    print("P33 Determine whether two positive integer numbers are coprime.")
+    print("35.isCoprime(to: 64) is \(35.isCoprime(to: 64))\n")
+
     print ("Section 2 done\n")
 
     return true

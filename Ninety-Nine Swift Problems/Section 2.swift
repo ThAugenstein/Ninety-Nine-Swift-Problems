@@ -38,3 +38,13 @@ extension Int {
         return alpha
     }
 }
+
+/**
+ P33 (*) Determine whether two positive integer numbers are coprime
+ */
+
+extension Int {
+    func isCoprime(to: Int) -> Bool {
+        return Int.gcd(self, to) == 1
+    }
+}

@@ -43,4 +43,13 @@ class Section2UnitTests: XCTestCase {
         XCTAssert(Int.gcd(36, 63) == 9, "The gcd of 36 and 63 is 9")
         XCTAssert(Int.gcd(1071, 462) == 21, "The gcd of 1071 and 462 is 21")
     }
+
+    /**
+     P33 (*) Determine whether two positive integer numbers are coprime
+     */
+
+    func testCoprim() {
+        XCTAssert(35.isCoprime(to: 64) == true, "35 is coprime to 64")
+        XCTAssert(21.isCoprime(to: 24) == false, "21 is not coprime to 24")
+    }
 }
