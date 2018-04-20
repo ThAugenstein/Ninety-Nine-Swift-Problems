@@ -10,6 +10,8 @@ import Foundation
 
 func runSection1() -> Bool {
 
+    print("Ninety-Nine Swift Problems...\n")
+    print("http://www.enekoalonso.com/projects/99-swift-problems/\n\n")
     print ("Running Section 1 ...\n")
 
     let sampleList = List(1, 1, 2, 3, 5, 8)!
