@@ -108,17 +108,17 @@ extension List where T: Equatable {
  */
 
 extension List {
-    func flatten2(_ addclosure: (_ item: List) -> Void) {
+    func flatten2(_ addClosure: (_ item: List) -> Void) {
 
         if let list = value as? List {
-            list.flatten2(addclosure)
+            list.flatten2(addClosure)
         } else {
             if let newItem = List(value) {
-                addclosure(newItem)
+                addClosure(newItem)
             }
         }
         if let next = nextItem {
-           next.flatten2(addclosure)
+           next.flatten2(addClosure)
         }
     }
 

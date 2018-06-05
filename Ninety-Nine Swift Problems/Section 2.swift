@@ -28,14 +28,17 @@ extension Int {
  */
 
 extension Int {
-    static func gcd(_ first: Int, _ second: Int) -> Int {
-        var a = first, b = second
-        while b != 0 {
-            let temp = b
-            b = a % b
-            a = temp
-        }
-        return a
+    static func gcd(_ number1: Int, _ number2: Int) -> Int {
+        guard number2 != 0 else { return number1 }
+        return gcd(number2, number1 % number2)
+
+//        var a = first, b = second
+//        while b != 0 {
+//            let temp = b
+//            b = a % b
+//            a = temp
+//        }
+//        return a
     }
 }
 
