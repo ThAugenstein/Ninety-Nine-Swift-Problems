@@ -40,8 +40,16 @@ class Section2UnitTests: XCTestCase {
      */
 
     func testGCD() {
-        XCTAssert(Int.gcd(36, 63) == 9, "The gcd of 36 and 63 is 9")
-        XCTAssert(Int.gcd(1071, 462) == 21, "The gcd of 1071 and 462 is 21")
+        let testCases = [(36, 63, 9), (1071, 462, 21), (13, 13, 13), (37, 600, 1),
+                         (20, 100, 20), (624129, 2061517, 18913), (2345, 72, 1),
+                         (1406700, 164115, 23445), (1368, 339, 3), (55534, 434334, 2),
+                         (243532, 0, 243532), (30315475, 24440870, 31415),
+                         (37279462087332, 366983722766, 564958)]
+
+        for (number1, number2, solution) in testCases {
+            XCTAssert(Int.gcd(number1, number2) == solution,
+                "The gcd of \(number1) and \(number2) is \(solution)")
+        }
     }
 
     /**
